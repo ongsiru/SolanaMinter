@@ -1,0 +1,618 @@
+/* Customize your main colors in :root variables */
+/*--card-background-color: #946cee; */
+@font-face {
+  font-family: "GowunBatang";
+  src: url("./fonts/GowunBatang-Bold.ttf");
+}
+
+@font-face{
+  font-family: "PoppinsLight";
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+@font-face{
+  font-family: "PoppinsSemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,900;1,800&display=swap');
+
+:root {
+  --main-background-color: #584486;
+  --card-background-lighter-color: #7A7F92;
+  --main-text-color:#F7F6F4;
+  --title-text-color:#F7F6F4;
+}
+
+body{
+  background-color: black;
+  background-size: 100% 100%;
+  font-family:'PoppinsLight';
+  font-size: 1.2em;
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select:none; 
+  user-select:none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display:none;
+}
+
+
+
+.bigWrap{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/mintwall.png);
+  background-size: cover;
+}
+
+h2, p{
+  color: var(--main-text-color);
+
+}
+
+.btnBox{
+  position: relative;
+  margin: 10px;
+}
+
+.btnStyle{
+  margin: 10px;
+  width : 40px;
+  height: 40px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+/*Heder */
+
+.active p{
+  color:rgb(120, 239, 199);
+}
+
+#header{
+  position: fixed;
+  left:10%;
+  top: 25px;
+  width:80%;
+  height:50px;
+  border-radius: 30px;
+  background-color: black;
+  border: 2px solid mediumaquamarine;
+  z-index:5;
+}
+
+
+.navbar_icons a {
+  color: white;
+}
+
+.navbar {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbarLogo{
+  margin-left:100px;
+  margin-top:10px;
+}
+.navbarLogo img{
+  height:'30px'
+}
+
+.navbarMenu{
+  display: flex;
+  border:black;
+  margin-right: 70px;
+  font-size: 21px;
+}
+.navbarMenu a{
+  text-decoration: none;
+  margin: 22px;
+}
+
+/*MainHome */
+.imgContainer{
+  position:relative;
+  width:60%;
+  margin:5px 10px;
+  min-height: 600px;
+}
+
+.mainContainer{
+  width:80%;
+  position:relative;
+  top:100px;
+  left:10%;
+  height:80%;
+  border:2px solid mediumaquamarine; 
+  border-radius:30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#mainImg1{
+  position:absolute;
+  left:5%;
+  top:8%; 
+}
+#mainImg1 img{
+  width:18vw;
+  border-radius: 50%;
+}
+
+#mainImg2{
+  position:absolute;
+  right:8%;
+  top:5%;
+
+}
+#mainImg2 img{
+  width:11vw;
+  border-radius: 50%;
+}
+
+#mainImg3{
+  position:absolute;
+  right:10%;
+  bottom:2%;
+
+}
+
+#mainImg3 img{
+  width:30vw;
+  border-radius: 50%;
+}
+
+.textContainer{
+  width:40%;
+  margin-top:60px; 
+}
+
+.textContainer h1{
+  background: linear-gradient(to right,white 0%,#B2FAFF 38% ,#AA43FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  line-height:0.7em;
+  font-family: 'PoppinsSemiBold';
+}
+
+.textContainer p{
+  margin-top:80px;
+  font-size: 20px;
+}
+
+@media(max-width: 600px){
+  #header{
+    border: 1px solid mediumaquamarine;
+  }
+  .navbarMenu{
+    font-size: 10px;
+  }
+  .navbarLogo{
+    margin-left: 18px;
+  }
+  .navbarLogo img{
+    height: 20px;
+  }
+  .navbarMenu a{
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+  .mainContainer{
+    flex-flow:column;
+    border:1px solid mediumaquamarine; 
+  }
+  .imgContainer{
+    position: relative;
+    width:90%;
+    min-height: 300px;
+  }
+  #mainImg1{
+    left:15%;
+    /* top:8%;  */
+  }
+  #mainImg1 img{
+    width:23vw;
+  }
+  /* #mainImg2{
+    right:8%;
+    top:5%;
+  } */
+  #mainImg2 img{
+    width:14vw;
+  }
+  /*#mainImg3{
+    right:10%;
+    bottom:2%;
+  } */
+  
+  #mainImg3 img{
+    width:38vw;
+  }
+
+  .textContainer{
+    width: auto;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .textContainer img{
+    width:280px;
+  }
+  .textContainer p{
+    
+  }
+}
+
+
+/* Mintpage */
+.SoloveMintinfo{
+  font-size: 32px;
+}
+
+.btn_info{
+  padding-top: 10px;
+  position: relative; 
+}
+
+.parentDiv{
+  position:relative; 
+  overflow: hidden;
+}
+
+.parentDiv:hover .tableImage{
+  opacity: 0;
+  transform: translate(100%,100%);
+  transition-delay: 0.25s;
+}
+
+.tableImage{
+  position:relative; 
+  width: 100%;
+  height: 100%;
+  transition-duration: 2.3s;
+}
+
+.tableHoverImage{
+  position: relative;
+  right : 250px;
+  top: -250px;
+  opacity: 0;
+  transition-duration: 1.8s;
+}
+
+.parentDiv:hover .tableHoverImage{
+  opacity: 1;
+  transform: translate(250px,250px);
+  transition-delay: 0.25s;
+}
+
+.SoloveMintinfo1{
+  display: flex;
+  -webkit-box-pack: justify;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+.SoloveMintinfo1 .unit{
+  margin-right: 180px;
+}
+
+.SoloveMintinfo2{
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.SoloveMintinfo2 .num{
+  margin-left: 220px;
+}
+
+.bar{
+  height: 0.5px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.label{
+  font-size: 20px; 
+}
+
+.unit{
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 5px;
+    line-height: 50px;
+}
+.num{
+  position: relative;
+  bottom: 15px;
+  font-size: 60px;
+}
+.select{
+  border-color: rgb(255, 255, 255);
+    background: white;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 16px;
+    color: black;
+    padding-right: 14px;
+    padding-left: 14px;
+    appearance: none;
+}
+
+
+
+.Roadmapwall {
+  width:'100%';
+  height:'100%';
+  background-image: url(./img/roadmapwall.png);
+  background-size : contain;
+  background-color: black;
+  position:'relative';
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.Circle {
+  width: 100vw;
+  height: 203vh;
+  border: 15px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  top : 165px;
+  right : 10px;
+}
+
+
+.sloguncontainer {
+  margin-top: 10vh;
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  will-change: transform;
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+.scrolling-text-content {
+  font-size: 120px;
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1em;
+  margin: 50px 0;
+  text-decoration-color: linear-gradient(right, white, purple);
+}
+
+@keyframes message{
+  from, to, 65% {transform: translate(-50%, 0)}
+  25% {transform: translate(-50%, 60px)}
+  26% {transform: translate(-50%, -60px)}
+
+}
+
+.Scrolldown {
+  height: 17px;
+  margin: auto;
+  position: relative;
+  overflow:hidden;
+  cursor: pointer;
+  width: 320px;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  top : 150px;
+  z-index: 1;
+}
+
+.Scrolldowntext {
+  margin: 12px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold 700;
+  position: absolute;
+  top: 0px;
+  color : rgba(140, 140, 140, 0.7)
+}
+
+.Scrolldowntext{
+  animation: message 2s cubic-bezier(0.645,.045,.355,1) infinite;
+}
+
+
+
+
+.Roadmapwall {
+  width:'100%';
+  height:1300px;
+  background-image: url(./img/roadmapwall.png);
+  background-size : contain;
+  background-color: black;
+  position:'relative';
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.Circle {
+  width: 100vw;
+  height: 200vh;
+  border: 15px solid rgb(255, 255, 255);
+  position: relative;
+  top : 210px;
+  right : 15px;
+}
+
+.slideText-wrap2{
+  width: 100vw;
+  height: 200vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slideText-wrap {
+  margin-top: 200px;
+  width: 300vw;
+  overflow: hidden;
+}
+
+.slideText-box {
+  width: 600vw;
+  animation-name: slideText;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slideText2-box {
+  width: 600vw;
+  animation-name: slideText2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slideText-box ul {
+  display: block;
+  width: 300vw;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+}
+
+.slideText2-box ul {
+  display: block;
+  width: 300vw;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+}
+
+.slideText-box li {
+  width: 150vw;
+  background: linear-gradient(#F7F6F4 0%, #dcb7ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  display: inline-block;
+  text-align: center;
+  transform: skewX(-20deg);
+}
+
+.slideText2-box li {
+  width: 150vw;
+  background: linear-gradient(#F7F6F4 0%, #e1c1ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  display: inline-block;
+  text-align: center;
+  transform: skewX(-20deg);
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-150vw);
+  }
+}
+
+@keyframes slideText2 {
+  0% {
+    transform: translateX(-150vw);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.Appa {
+  text-align: center;
+}
+
+.question-section {
+  background: rgb(255, 238, 255);
+  opacity: 0.9;
+  border: transparent;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.05) 0px 1px 3px 1px;
+  cursor: pointer;
+  width: 50vw;
+  padding: 5px 0 5px 0;
+}
+
+.question-align {
+  align-items: center;
+  display: flex;
+  min-height: 10px;
+  text-align: left;
+}
+
+.question-align h4 {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: lighter;
+}
+
+.question-styling {
+  width: 100%;
+}
+
+.question-icon {
+  background: none;
+  border: none;
+  color: #be61c0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 8px;
+
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.answer-divider {
+  border-top: 1px solid rgba(0,0,0, 0.15);
+}
+
+.answer {
+  margin-left: 15px;
+  margin-right: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+
+}
+
+.Appa p{
+  color: #000;
+  font-size: 16px;
+}
